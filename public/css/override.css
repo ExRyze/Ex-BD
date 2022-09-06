@@ -1,0 +1,158 @@
+#wrapper {
+  flex-direction: column;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.start-0 {
+  left: 0;
+}
+
+.review {
+  border: 2px solid;
+}
+
+.review .card:nth-last-child(1) {
+  margin-bottom: 0!important;
+}
+
+.review-comment {
+  border-bottom: 2px solid;
+}
+
+.review .img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.header-image-carousel {
+  height: 270px;
+  max-height: 270px;
+  min-height: 270px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.sidebar-brand {
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.navbar-container {
+  display: flex;
+  gap: 20px;
+  margin-left: 2.5%;
+}
+
+.nav-item::marker {
+  content: ''!important;
+}
+
+.bg-gradient-darkblue{
+  background-color: #293462;
+  background-image:
+  linear-gradient(180deg,#293462 10%,#293462 100%);
+  background-size: cover;
+}
+
+.container-fluid {
+  padding-top: 1.5rem;
+}
+
+.header .carousel-item {
+  height: 100%;
+}
+
+.carousel-item {
+  height: fit-content;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-register-image{
+  background-image: url(../img/register.jpg);
+  }
+
+.bg-login-image{
+  background-image: url(../img/login.png);
+}
+
+.card-custom {
+  height: 500px;
+}
+
+.header > div > .card {
+  height: 100%;
+}
+
+.aside .game-image {
+  width: 88px;
+  height: fit-content;
+}
+
+.container-item {
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.card-game-img, .card-game-desc {
+  height: 250px;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.card-game-container .card-game-img, .card-game-container .card-game-desc {
+  height: 150px;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.carousel-item {
+  min-height: fit-content!important;
+}
+
+.carousel-control {
+  opacity: 0;
+  width: 10%;
+}
+
+.carousel-control:hover {
+  background-color: rgb(128, 128, 128, 0.3);
+}
+
+.carousel-control-prev {
+  border-radius: 0 100% 100% 0;
+}
+
+.carousel-control-next {
+  border-radius: 100% 0 0 100%;
+}
+
+.game-desc {
+  border-left: 2px solid;
+}
+
+.title {
+  border-bottom: 2px solid;
+}
