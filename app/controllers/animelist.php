@@ -17,4 +17,19 @@ class Animelist extends Controller{
     $this->view("animelist/index", $data);
     $this->view("template/footer");
   }
+
+  public function add() {
+    session_start();
+    if(isset($_SESSION["user"])) {
+      if($_SESSION["user"]['role'] === "user") {
+        header('Location: '.BASE_URL);
+      }
+      $data['name'] = $_SESSION['user']['username'];
+      var_dump($_POST);
+      $this->model("Animelist_model")->add($_POST);
+      header("Location: ".BASE_URL."/animelist");
+    } else {
+      header('Location: '.BASE_URL);
+    }
+  }
 }

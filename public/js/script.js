@@ -26,20 +26,20 @@ $(function(){
        }); 
 
        $('.modalAddAnime').on('click', function(){
-        $('.modal-body form').attr('action', $BASEURL+'/userlists/tambah');
+        $('.modal-body form').attr('action', $BASEURL+'/animelist/add');
         $('#formModalLabel').html("Add Anime Data");
         $('.modal-footer button[type=submit]').html("Add Anime");
-        $('#anime-title').val("");
-        $('#anime-alternative').val("");
-        $('#anime-author').val("");
-        $('#anime-episodes').val("");
-        $('#anime-started').val("");
-        $('#anime-finished').val("");
-        $('#anime-description').val("");
+        $('#animetitle').val("");
+        $('#animealternative').val("");
+        $('#animeauthor').val("");
+        $('#animeepisodes').val("");
+        $('#animestarted').val("");
+        $('#animefinished').val("");
+        $('#animedescription').val("");
         // Additional
-        $('#anime-credits').val("");
-        $('#anime-type').val("");
-        $('#anime-resolution').val("");
+        $('#animecredits').val("");
+        $('#animetype').val("");
+        $('#animeresolution').val("");
     }); 
 
     $('.tampilModalTambahUser').on('click', function(){

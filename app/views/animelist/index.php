@@ -101,40 +101,39 @@
       </div>
       <div class="modal-body">
         <form method="post">
-        <input type="hidden" id="email" name="email"> 
         <div class="form-group">
-            <label for="anime-title">Anime Title</label>
-            <input type="text" class="form-control" id="anime-title" name="anime-title">
+            <label for="animetitle">Anime Title</label>
+            <input type="text" class="form-control" id="animetitle" name="animetitle" required>
         </div>
 
         <div class="form-group">
-            <label for="anime-alternative">Alternative Title</label>
-            <input type="text" class="form-control" id="anime-alternative" name="anime-alternative">
+            <label for="animealternative">Alternative Title</label>
+            <input type="text" class="form-control" id="animealternative" name="animealternative">
         </div>
 
         <div class="form-group">
-            <label for="anime-author">Author</label>
-            <input type="text" class="form-control" id="anime-author" name="anime-author">
+            <label for="animeauthor">Author</label>
+            <input type="text" class="form-control" id="animeauthor" name="animeauthor">
         </div>
 
         <div class="form-group">
-            <label for="anime-episodes">Episodes</label>
-            <input type="number" class="form-control" id="anime-episodes" name="anime-episodes" min="0">
+            <label for="animeepisodes">Episodes</label>
+            <input type="number" class="form-control" id="animeepisodes" name="animeepisodes" min="0">
         </div>
         
         <div class="form-group">
-            <label for="anime-started">Started Airing</label>
-            <input type="date" class="form-control" id="anime-started" name="anime-started">
+            <label for="animestarted">Started Airing</label>
+            <input type="date" class="form-control" id="animestarted" name="animestarted">
         </div>
         
         <div class="form-group">
-            <label for="anime-finished">Finished Airing</label>
-            <input type="date" class="form-control" id="anime-finished" name="anime-finished">
+            <label for="animefinished">Finished Airing</label>
+            <input type="date" class="form-control" id="animefinished" name="animefinished">
         </div>
         
         <div class="form-group">
-            <label for="anime-description">Description</label>
-            <textarea name="anime-description" id="anime-description" rows="5" class="w-100"></textarea>
+            <label for="animedescription">Description</label>
+            <textarea name="animedescription" id="animedescription" rows="5" class="w-100"></textarea>
         </div>
 
         <div class="border-bottom-primary mb-3">
@@ -142,18 +141,18 @@
         </div>
 
         <div class="form-group">
-            <label for="anime-credits">Credits</label>
-            <input type="text" class="form-control" id="anime-credits" name="anime-credits">
+            <label for="animecredits">Credits</label>
+            <input type="text" class="form-control" id="animecredits" name="animecredits">
         </div>
 
         <div class="form-group">
-            <label for="anime-type">Type Videos</label>
-            <input type="text" class="form-control" id="anime-type" name="anime-type">
+            <label for="animetype">Type Videos</label>
+            <input type="text" class="form-control" id="animetype" name="animetype">
         </div>
 
         <div class="form-group">
-            <label for="anime-resolution">Resolution</label>
-            <input type="text" class="form-control" id="anime-resolution" name="anime-resolution">
+            <label for="animeresolution">Resolution</label>
+            <input type="text" class="form-control" id="animeresolution" name="animeresolution">
         </div>
 
       </div>
