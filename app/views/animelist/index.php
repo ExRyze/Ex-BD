@@ -32,38 +32,62 @@
                                 <table class='table table-bordered' id='dataTable' cellspacing='0'>
                                     <thead>
                                         <tr class="text-center">
+                                            <th>Id Anime</th>
                                             <th>Title</th>
                                             <th>Alternative Title</th>
                                             <th>Episodes</th>
                                             <th>Description</th>
-                                            <th>Start Airing</th>
+                                            <th>Date Release</th>
                                             <th>Finish Airing</th>
                                             <th>Author</th>
+                                            <th>Status</th>
                                             <th>Credits</th>
                                             <th>Type Videos</th>
                                             <th>Resolution</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr class="text-center">
+                                            <th>Id Anime</th>
                                             <th>Title</th>
                                             <th>Alternative Title</th>
                                             <th>Episodes</th>
                                             <th>Description</th>
-                                            <th>Start Airing</th>
+                                            <th>Date Release</th>
                                             <th>Finish Airing</th>
                                             <th>Author</th>
+                                            <th>Status</th>
                                             <th>Credits</th>
                                             <th>Type Videos</th>
                                             <th>Resolution</th>
+                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                    <!-- <?php foreach($data["game-db"] as $row):?>
+                                    <?php foreach($data["animelist"] as $row):?>
                                         <tr>
-                                    
+                                            <td><?=$row['id_anime']?></td>
+                                            <td><?=$row['title_anime']?></td>
+                                            <td><?=$row['alternative_title_anime']?></td>
+                                            <td><?=$row['episodes_anime']?></td>
+                                            <td><?=$row['description_anime']?></td>
+                                            <td><?=$row['date_release_anime']?></td>
+                                            <td><?=$row['date_finished_anime']?></td>
+                                            <td><?=$row['author_anime']?></td>
+                                            <td><?=$row['status_anime']?></td>
+                                            <td><?=$row['credits_anime']?></td>
+                                            <td><?=$row['type_video_anime']?></td>
+                                            <td><?=$row['resolution_anime']?></td>
+                                            <td>
+                                                <div class="d-flex justify-content-center rounded text-dark">
+                                                    <i class="cursor-pointer fas fa-info bg-success p-2 w-fit"></i>
+                                                    <i class="cursor-pointer fas fa-edit bg-warning p-2 w-fit"></i>
+                                                    <i class="cursor-pointer fas fa-trash-alt bg-danger p-2 w-fit"></i>
+                                                </div>
+                                            </td>
                                         </tr>
-                                    <?php endforeach;?> -->
+                                    <?php endforeach;?>
                                 </table>
                             </div>
                         </div>
@@ -115,10 +139,15 @@
             <label for="animeauthor">Author</label>
             <input type="text" class="form-control" id="animeauthor" name="animeauthor">
         </div>
-
+        
         <div class="form-group">
             <label for="animeepisodes">Episodes</label>
             <input type="number" class="form-control" id="animeepisodes" name="animeepisodes" min="0">
+        </div>
+        
+        <div class="form-group">
+            <label for="animestatus">Status</label>
+            <input type="text" class="form-control" id="animestatus" name="animestatus">
         </div>
         
         <div class="form-group">

@@ -10,6 +10,12 @@
   cursor: pointer;
 }
 
+.w-fit {
+  width: 2rem!important;
+  justify-content: center;
+  display: flex;
+}
+
 .bottom-0 {
   bottom: 0;
 }

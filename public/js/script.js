@@ -32,6 +32,7 @@ $(function(){
         $('#animetitle').val("");
         $('#animealternative').val("");
         $('#animeauthor').val("");
+        $('#animestatus').val("");
         $('#animeepisodes').val("");
         $('#animestarted').val("");
         $('#animefinished').val("");

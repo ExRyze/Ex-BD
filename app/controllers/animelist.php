@@ -25,8 +25,17 @@ class Animelist extends Controller{
         header('Location: '.BASE_URL);
       }
       $data['name'] = $_SESSION['user']['username'];
-      var_dump($_POST);
-      $this->model("Animelist_model")->add($_POST);
+      if($_POST['animestarted'] === "" && $_POST['animefinished'] === "") {
+        $_POST['animestarted'] = NULL;
+        $_POST['animefinished'] = NULL;
+        $this->model("Animelist_model")->add($_POST);
+      } else if($_POST['animestarted'] === "") {
+        $_POST['animestarted'] = NULL;
+        $this->model("Animelist_model")->add($_POST);
+      } else if($_POST['animefinished'] === "") {
+        $_POST['animefinished'] = NULL;
+        $this->model("Animelist_model")->add($_POST);
+      }
       header("Location: ".BASE_URL."/animelist");
     } else {
       header('Location: '.BASE_URL);
