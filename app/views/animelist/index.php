@@ -22,68 +22,80 @@
                             href="../../../phpmyadmin">Database Structure</a>.</p>
 
                     <!-- DataTales Example -->
-                    <button class="btn btn-primary mb-3 modalAddAnime" data-toggle="modal" data-target="#addAnime">Add Game</button>
+                    <a href="<?=BASE_URL?>/animelist/add" class="btn btn-primary mb-3">Add Anime</a>
                     <div class='card shadow mb-4'>
                         <div class='card-header py-3'>
                             <h6 class='m-0 font-weight-bold text-primary'>Data</h6>
                         </div>
                         <div class='card-body'>
-                            <div class='table-responsive scrollbar-none'>
+                            <div class='table-responsive'>
                                 <table class='table table-bordered' id='dataTable' cellspacing='0'>
                                     <thead>
                                         <tr class="text-center">
-                                            <th>Id Anime</th>
-                                            <th>Title</th>
-                                            <th>Alternative Title</th>
-                                            <th>Episodes</th>
-                                            <th>Description</th>
-                                            <th>Date Release</th>
-                                            <th>Finish Airing</th>
-                                            <th>Author</th>
-                                            <th>Status</th>
-                                            <th>Credits</th>
-                                            <th>Type Videos</th>
-                                            <th>Resolution</th>
-                                            <th>Action</th>
+                                            <th class="text-nowrap">Id Anime</th>
+                                            <th class="text-nowrap">Title</th>
+                                            <th class="text-nowrap">Alternative Title</th>
+                                            <th class="text-nowrap">Episodes</th>
+                                            <th class="text-nowrap">Description</th>
+                                            <th class="text-nowrap">Date Release</th>
+                                            <th class="text-nowrap">Finish Airing</th>
+                                            <th class="text-nowrap">Author</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Credits</th>
+                                            <th class="text-nowrap">Type Videos</th>
+                                            <th class="text-nowrap">Resolution</th>
+                                            <th class="text-nowrap">Added Date</th>
+                                            <th class="text-nowrap">Added By</th>
+                                            <th class="text-nowrap">Updated Date</th>
+                                            <th class="text-nowrap">Updated By</th>
+                                            <th class="text-nowrap">Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr class="text-center">
-                                            <th>Id Anime</th>
-                                            <th>Title</th>
-                                            <th>Alternative Title</th>
-                                            <th>Episodes</th>
-                                            <th>Description</th>
-                                            <th>Date Release</th>
-                                            <th>Finish Airing</th>
-                                            <th>Author</th>
-                                            <th>Status</th>
-                                            <th>Credits</th>
-                                            <th>Type Videos</th>
-                                            <th>Resolution</th>
-                                            <th>Action</th>
+                                            <th class="text-nowrap">Id Anime</th>
+                                            <th class="text-nowrap">Title</th>
+                                            <th class="text-nowrap">Alternative Title</th>
+                                            <th class="text-nowrap">Episodes</th>
+                                            <th class="text-nowrap">Description</th>
+                                            <th class="text-nowrap">Date Release</th>
+                                            <th class="text-nowrap">Finish Airing</th>
+                                            <th class="text-nowrap">Author</th>
+                                            <th class="text-nowrap">Status</th>
+                                            <th class="text-nowrap">Credits</th>
+                                            <th class="text-nowrap">Type Videos</th>
+                                            <th class="text-nowrap">Resolution</th>
+                                            <th class="text-nowrap">Added Date</th>
+                                            <th class="text-nowrap">Added By</th>
+                                            <th class="text-nowrap">Updated Date</th>
+                                            <th class="text-nowrap">Updated By</th>
+                                            <th class="text-nowrap">Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                     <?php foreach($data["animelist"] as $row):?>
                                         <tr>
-                                            <td><?=$row['id_anime']?></td>
-                                            <td><?=$row['title_anime']?></td>
-                                            <td><?=$row['alternative_title_anime']?></td>
-                                            <td><?=$row['episodes_anime']?></td>
-                                            <td><?=$row['description_anime']?></td>
-                                            <td><?=$row['date_release_anime']?></td>
-                                            <td><?=$row['date_finished_anime']?></td>
-                                            <td><?=$row['author_anime']?></td>
-                                            <td><?=$row['status_anime']?></td>
-                                            <td><?=$row['credits_anime']?></td>
-                                            <td><?=$row['type_video_anime']?></td>
-                                            <td><?=$row['resolution_anime']?></td>
-                                            <td>
-                                                <div class="d-flex justify-content-center rounded text-dark">
-                                                    <i class="cursor-pointer fas fa-info bg-success p-2 w-fit"></i>
-                                                    <i class="cursor-pointer fas fa-edit bg-warning p-2 w-fit"></i>
-                                                    <i class="cursor-pointer fas fa-trash-alt bg-danger p-2 w-fit"></i>
+                                            <td class="text-nowrap"><?=$row['id_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['title_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['alternative_title_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['episodes_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['description_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['date_release_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['date_finished_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['author_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['status_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['credits_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['type_video_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['resolution_anime']?></td>
+                                            <td class="text-nowrap"><?=$row['added_date']?></td>
+                                            <td class="text-nowrap"><?=$row['added_by']?></td>
+                                            <td class="text-nowrap"><?=$row['updated_date']?></td>
+                                            <td class="text-nowrap"><?=$row['updated_by']?></td>
+                                            <td class="text-nowrap">
+                                                <div class="d-flex justify-content-center rounded">
+                                                    <a href="" class="text-dark"><i class="cursor-pointer fas fa-info bg-success p-2 w-fit"></i></a>
+                                                    <a href="<?=BASE_URL?>/animelist/update/<?=$row['id_anime']?>" class="text-dark"><i class="cursor-pointer fas fa-edit bg-warning p-2 w-fit"></i></a>
+                                                    <a href="<?=BASE_URL?>/animelist/delete/<?=$row['id_anime']?>" class="text-dark"><i class="cursor-pointer fas fa-trash-alt bg-danger p-2 w-fit"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -113,83 +125,3 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    <div class="modal fade" id="addAnime" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true" style="margin-top:50px;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="formModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="post">
-        <div class="form-group">
-            <label for="animetitle">Anime Title</label>
-            <input type="text" class="form-control" id="animetitle" name="animetitle" required>
-        </div>
-
-        <div class="form-group">
-            <label for="animealternative">Alternative Title</label>
-            <input type="text" class="form-control" id="animealternative" name="animealternative">
-        </div>
-
-        <div class="form-group">
-            <label for="animeauthor">Author</label>
-            <input type="text" class="form-control" id="animeauthor" name="animeauthor">
-        </div>
-        
-        <div class="form-group">
-            <label for="animeepisodes">Episodes</label>
-            <input type="number" class="form-control" id="animeepisodes" name="animeepisodes" min="0">
-        </div>
-        
-        <div class="form-group">
-            <label for="animestatus">Status</label>
-            <input type="text" class="form-control" id="animestatus" name="animestatus">
-        </div>
-        
-        <div class="form-group">
-            <label for="animestarted">Started Airing</label>
-            <input type="date" class="form-control" id="animestarted" name="animestarted">
-        </div>
-        
-        <div class="form-group">
-            <label for="animefinished">Finished Airing</label>
-            <input type="date" class="form-control" id="animefinished" name="animefinished">
-        </div>
-        
-        <div class="form-group">
-            <label for="animedescription">Description</label>
-            <textarea name="animedescription" id="animedescription" rows="5" class="w-100"></textarea>
-        </div>
-
-        <div class="border-bottom-primary mb-3">
-            <h5 class="h5">Additional</h5>
-        </div>
-
-        <div class="form-group">
-            <label for="animecredits">Credits</label>
-            <input type="text" class="form-control" id="animecredits" name="animecredits">
-        </div>
-
-        <div class="form-group">
-            <label for="animetype">Type Videos</label>
-            <input type="text" class="form-control" id="animetype" name="animetype">
-        </div>
-
-        <div class="form-group">
-            <label for="animeresolution">Resolution</label>
-            <input type="text" class="form-control" id="animeresolution" name="animeresolution">
-        </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary"></button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>

@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="shortcut icon" href="<?=BASE_URL?>/public/img/logoEx.png" type="image/x-icon">
+
     <title>Ex-BD - <?=$data["title"]?></title>
 
     <!-- Custom fonts for this template-->
