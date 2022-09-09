@@ -2,7 +2,6 @@
 class Login extends Controller {
     public function index()
     {
-        session_start();
         if(isset($_SESSION["user"])) {
             header("location: ".BASE_URL);
             exit;
@@ -28,8 +27,7 @@ class Login extends Controller {
         } else {
             if($this->model("Users_model")->checkDataByEmail($data) > 0) {
                 $row = $this->model("Users_model")->getDataByEmail($data);
-                session_start();
-                $_SESSION["user"] = [
+                        $_SESSION["user"] = [
                     'username' => $row['Username'],
                     'email' => $row['email'],
                     'password' => $row['Password'],

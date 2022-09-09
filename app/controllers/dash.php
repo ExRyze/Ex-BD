@@ -2,7 +2,6 @@
 
 class Dash extends Controller {
   public function index() {
-    session_start();
     if(isset($_SESSION["user"])) {
       $data['name'] = $_SESSION['user']['username'];
     }
@@ -22,7 +21,6 @@ class Dash extends Controller {
     if(!isset($_POST["search"])) {
       header("location: ".BASE_URL);
     }
-    session_start();
     if(isset($_SESSION["user"])) {
       $data['name'] = $_SESSION['user']['username'];
     }
@@ -37,7 +35,6 @@ class Dash extends Controller {
     if($genre === NULL) {
       header("location: ".BASE_URL);
     }
-    session_start();
     if(isset($_SESSION["user"])) {
       $data['name'] = $_SESSION['user']['username'];
     }

@@ -5,7 +5,6 @@ class Game extends Controller {
     if($id === NULL || $this->model("Gamelists_model")->checkGame($id) === 0) {
       header("location: ".BASE_URL);
     }
-    session_start();
     if(isset($_SESSION["user"])) {
       $data['name'] = $_SESSION['user']['username'];
       $data["RCRating"] = $this->model("Rating_model")->rowUserRating($_SESSION['user']['email'], $id);
@@ -22,7 +21,6 @@ class Game extends Controller {
   }
 
   public function rating($id = NULL) {
-    session_start();
     if ($id === NULL) {
       header("location: ".BASE_URL);
     } else if($_POST['rating'] != "" || $_POST['rating'] != NULL) {
@@ -34,7 +32,6 @@ class Game extends Controller {
   }
 
   public function updaterating($id = NULL) {
-    session_start();
     if ($id === NULL) {
       header("location: ".BASE_URL);
     } else if ($_POST['rating'] != "" || $_POST['rating'] != NULL) {
@@ -46,7 +43,6 @@ class Game extends Controller {
   }
 
   public function review($id = NULL) {
-    session_start();
     if ($id === NULL) {
       header("location: ".BASE_URL);
     } else if ($_POST['review'] != "" || $_POST['review'] != NULL) {
@@ -58,7 +54,6 @@ class Game extends Controller {
   }
 
   public function deletereview($id = NULL, $idGame = NULL) {
-    session_start();
     if ($id === NULL || $idGame === NULL) {
       header("location: ".BASE_URL);
     }
@@ -69,7 +64,6 @@ class Game extends Controller {
   }
 
   public function updatereview($id = NULL, $idGame = NULL) {
-    session_start();
     if ($id === NULL || $idGame === NULL) {
       header("location: ".BASE_URL);
     }

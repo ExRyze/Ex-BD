@@ -2,7 +2,6 @@
 
 class profile extends Controller{
     public function index(){
-        session_start();
         if(!isset($_SESSION["user"])) {
             header("location: ".BASE_URL."/login");
         } else {
@@ -15,7 +14,6 @@ class profile extends Controller{
     }
 
     public function update() {
-        session_start();
         $data = [
             'username' => $_POST['username'],
             'email' => $_POST['email'],

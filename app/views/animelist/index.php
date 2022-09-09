@@ -15,12 +15,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid col-lg-12">
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Animelist</h1>
-                    <p class="mb-4">This is game lists data that is used to manage game datas that is shown to the user. For editing the database click this link <a target="_blank"
-                            href="../../../phpmyadmin">Database Structure</a>.</p>
-
+                    
                     <!-- DataTales Example -->
                     <a href="<?=BASE_URL?>/animelist/add" class="btn btn-primary mb-3">Add Anime</a>
                     <div class='card shadow mb-4'>

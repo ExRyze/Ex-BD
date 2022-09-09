@@ -3,7 +3,6 @@
 class Register extends Controller {
     public function index()
     {
-        session_start();
         if(isset($_SESSION["user"])) {
             header("location: ".BASE_URL);
             exit;
@@ -39,8 +38,7 @@ class Register extends Controller {
             } else {
                 $this->model("Users_model")->add($data);
                 $row = $this->model("Users_model")->getDataByEmail($data);
-                session_start();
-                $_SESSION["user"] = [
+                        $_SESSION["user"] = [
                     'username' => $row['Username'],
                     'email' => $row['email'],
                     'password' => $row['Password'],
