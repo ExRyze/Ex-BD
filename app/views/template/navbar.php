@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-light bg-gradient-dark sidebar-dark topbar static-top shadow">
+<nav class="navbar navbar-expand navbar-light bg-primary topbar static-top shadow">
     <!-- Sidebar Toggle (Topbar) -->
     <!-- <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
@@ -8,13 +8,13 @@
         <div class="sidebar-brand-icon">
             <img src="<?=BASE_URL;?>/public/img/logoEx.png" alt="logo-ex" width="50">
         </div>
-        <div class="sidebar-brand-text mx-3">Ex-BD</div>
+        <div class="sidebar-brand-text mx-3 text-white">Ex-BD</div>
     </a>
 
     <div class="navbar-container">
     <li class="nav-item">
         <form class="nav-link" action="<?=BASE_URL;?>/dash/search" method="post">
-            <button type="submit" class="mr-3 btn btn-primary">Search</button>
+            <button type="submit" class="mr-3 btn btn-secondary">Search</button>
             <input type="text" name="search" class="w-100 rounded">
         </form>
     </li>
@@ -22,7 +22,7 @@
 
     <?php if (isset($data['name']) && $_SESSION['user']['role'] != "user") { ?>
     <li class="nav-item">
-        <a class="nav-link" href="<?= BASE_URL ?>/animelist">
+        <a class="nav-link text-white" href="<?= BASE_URL ?>/animelist">
             <i class="fas fa-fw fa-table"></i>
             <span>Animelist</span>
         </a>
@@ -31,7 +31,7 @@
 
     <?php if (isset($data['name']) && $_SESSION['user']['role'] === "admin") { ?>
     <li class="nav-item">
-        <a class="nav-link" href="<?= BASE_URL ?>/userlists">
+        <a class="nav-link text-white" href="<?= BASE_URL ?>/userlists">
             <i class="fas fa-fw fa-table"></i>
             <span>Userlist</span>
         </a>

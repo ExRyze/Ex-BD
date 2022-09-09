@@ -19,7 +19,7 @@
                     <div class="col-md-10 mx-auto">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="h5 pb-3 mb-4 border-bottom-primary">Add Anime</h5>
+                          <h5 class="h5 pb-3 mb-4 border-bottom border-edge header">Add Anime</h5>
                           <form action="<?=BASE_URL?>/animelist/addConfig" method="post" class="w-100 d-flex flex-wrap form">
                             <div class="form-group col-sm-6">
                               <label for="animetitle">Anime Title</label>
@@ -61,7 +61,7 @@
                               <textarea name="animedescription" id="animedescription" rows="5" class="w-100"></textarea>
                             </div>
 
-                            <div class="border-bottom-primary mb-3 w-100">
+                            <div class="border-bottom border-edge mb-3 w-100">
                                 <h5 class="h5">Additional</h5>
                             </div>
 
@@ -81,8 +81,8 @@
                             </div>
 
                             <div class="modal-footer col-sm-12">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="submit" class="btn btn-primary">Add Anime</button>
+                              <a href="<?=BASE_URL?>/animelist" class="btn btn-danger">Close</a>
+                              <button type="submit" class="btn btn-success form-update-anime">Add Anime</button>
                             </div>
                           </form>
                         </div>

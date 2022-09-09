@@ -17,7 +17,7 @@
                 <div class="container-fluid col-lg-12">
                     
                     <!-- DataTales Example -->
-                    <a href="<?=BASE_URL?>/animelist/add" class="btn btn-primary mb-3">Add Anime</a>
+                    <a href="<?=BASE_URL?>/animelist/add" class="btn btn-secondary mb-3">Add Anime</a>
                     <div class='card shadow mb-4'>
                         <div class='card-header py-3'>
                             <h6 class='m-0 font-weight-bold text-primary'>Data</h6>

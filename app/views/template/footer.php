@@ -21,18 +21,20 @@
     <script src="<?=BASE_URL;?>/public/js/jquery-3.6.0.min.js"></script>
     <?php if(isset($data['anime'])) { ?>
         <script>
-        $('.form').attr("action", "<?=BASE_URL?>/animelist/updateConfig/"+anime.id_anime);
-        $('#animetitle').val(anime.title_anime);
-        $('#animealternative').val(anime.alternative_title_anime);
-        $('#animeepisodes').val(anime.episodes_anime);
-        $('#animedescription').val(anime.description_anime);
-        $('#animeauthor').val(anime.author_anime);
-        $('#animestatus').val(anime.status_anime);
-        $('#animestarted').val(anime.date_release_anime);
-        $('#animefinished').val(anime.date_finished_anime);
-        $('#animecredits').val(anime.credits_anime);
-        $('#animetype').val(anime.type_video_anime);
-        $('#animeresolution').val(anime.resolution_anime);
+            $('.form').attr("action", "<?=BASE_URL?>/animelist/updateConfig/"+anime.id_anime);
+            $('.header').text("Update Anime");
+            $(".form-update-anime").text("Update Anime");
+            $('#animetitle').val(anime.title_anime);
+            $('#animealternative').val(anime.alternative_title_anime);
+            $('#animeepisodes').val(anime.episodes_anime);
+            $('#animedescription').val(anime.description_anime);
+            $('#animeauthor').val(anime.author_anime);
+            $('#animestatus').val(anime.status_anime);
+            $('#animestarted').val(anime.date_release_anime);
+            $('#animefinished').val(anime.date_finished_anime);
+            $('#animecredits').val(anime.credits_anime);
+            $('#animetype').val(anime.type_video_anime);
+            $('#animeresolution').val(anime.resolution_anime);
         </script>
     <?php } ?>
 </body>
